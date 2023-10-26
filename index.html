@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calc</title>
+</head>
+
+<body>
+    <div class="forma">
+        <div class="cabeca">
+            <div class="icons">
+                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon"
+                    class="icones">
+                    <path
+                        d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z">
+                    </path>
+                </svg>
+            </div>
+            <div class="icons">
+                <img class="icone" src="./header/sla.svg" alt="hello">
+            </div>
+            <div class="icons">
+                <img class="icones" src="./header/menu.png" alt="menu">
+            </div>
+            <div class="icons">
+                <img class="icones" src="./header/homecerto.png" alt="home">
+            </div>
+            <div class="icons">
+                <img class="icones" src="./header/tresponto.svg" alt="tress">
+            </div>
+        </div>
+        <div class="operacoes">
+            <div id="mini-resultado">
+
+            </div>
+            <div id="resultado">
+            </div>
+        </div>
+        <div class="digitacao">
+
+            <div class="a">
+                <button class="firsttext1" onclick="limpar()">C</button>
+            </div>
+            <div class="a">
+                <button class="firsttext1" onclick="apagar()"> <img class="apagar" src="./img/Group.svg"
+                        alt="apagar"></button>
+            </div>
+            <div class="a">
+                <button id="operation" class="firsttext1" onclick="adicionarOperacoes('%')">%</button>
+            </div>
+            <div class="a">
+                <button id="operation" class="firsttext1" onclick="adicionarOperacoes('÷')">÷</button>
+            </div>
+
+
+
+            <div class="a">
+                <button class="firsttext" onclick="adicionarNumero('7')">7</button>
+            </div>
+            <div class="a">
+                <button class="firsttext" onclick="adicionarNumero('8')">8</button>
+            </div>
+            <div class="a">
+                <button class="firsttext" onclick="adicionarNumero('9')">9</button>
+            </div>
+            <div class="a">
+                <button id="operation" class="firsttext1" onclick="adicionarOperacoes('×')">×</button>
+            </div>
+
+
+
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('4')">4</button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('5')">5</button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('6')">6</button>
+            </div>
+            <div class="a">
+                <button id="operation" class="firsttext1" onclick="adicionarOperacoes('-')">-</button>
+            </div>
+
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('1')">1</button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('2')">2</button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('3')">3</button>
+            </div>
+            <div class="a">
+                <button id="operation" class="firsttext1" onclick="adicionarOperacoes('+')">+</button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext1"> <img src="./img/aaa.svg" alt="jkdakjwd"></button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('0')">0</button>
+            </div>
+            <div class="a">
+                <button id="numbers" class="firsttext" onclick="adicionarNumero('.')">,</button>
+            </div>
+            <div class="a">
+                <button id="giual" class="firsttext1" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
